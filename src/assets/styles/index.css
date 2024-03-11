@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 300;
+        src: url("../fonts/Poppins-Light.ttf")
+            format("truetype");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        src: url("../fonts/Poppins-Regular.ttf")
+            format("truetype");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        src: url("../fonts/Poppins-Medium.ttf")
+            format("truetype");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        src: url("../fonts/Poppins-Bold.ttf")
+            format("truetype");
+        font-display: swap;
+    }
+}
+
+:root{
+    --color-gray-back: #0b0b0b;
+    --color-gray-dark: #222222;
+    --color-gray-medium: #898989;
+    --color-gray-light: #ededed;
+    --color-primary: #e6621f;
+}
+
+#root{
+    height: 100vh
+}
+
+*{
+    @apply font-poppins;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ecf0ef;
+}
+
+details > summary {
+    list-style: none;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
